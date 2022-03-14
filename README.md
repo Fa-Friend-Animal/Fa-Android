@@ -1,4 +1,4 @@
-# Fa-Android
+## 스마콘 프로젝트
 CommitType 설명 
 
 📑 :: 파일 생성 및 구조 변경
