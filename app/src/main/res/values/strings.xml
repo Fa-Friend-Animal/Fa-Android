@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fa-Android</string>
+    <string name="web_client_id" translatable="false">646428855196-7aouov3ahae6pvidgtb4ja1hifdhk5fo.apps.googleusercontent.com</string>
 </resources>
