@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "646428855196",
+    "project_id": "fa-friend-animal",
+    "storage_bucket": "fa-friend-animal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646428855196:android:6deaf0356549e4d727d659",
+        "android_client_info": {
+          "package_name": "com.example.fa_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646428855196-r69eni9jgruipgepkabvkp23pvcqg8pd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fa_android",
+            "certificate_hash": "47b0304905cea6d53dd30c5751f3ce776afc3e0b"
+          }
+        },
+        {
+          "client_id": "646428855196-7aouov3ahae6pvidgtb4ja1hifdhk5fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADWg7PntJP3kr27zmQNQkpoIdrsIbR7Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646428855196-7aouov3ahae6pvidgtb4ja1hifdhk5fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,8 +3,7 @@ buildscript {
         compose_version = '1.0.1'
         lifecycle_version = "2.5.0-alpha02"
         arch_version = "2.1.0"
-        ext.koin_version = '2.1.5'
-
+        koin_version= "3.2.0-beta-1"
 
     }
     dependencies {
