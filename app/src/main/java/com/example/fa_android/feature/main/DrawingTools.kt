@@ -19,7 +19,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Email
-
+import androidx.compose.material.icons.filled.Send
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -45,7 +45,7 @@ fun DrawingTools(
     drawBrush: MutableState<Float>,
     usedColors: MutableSet<Color>
 ) {
-    var showBrushes by remember { mutableStateOf(false) }
+    var showBrushes: Boolean by remember { mutableStateOf(false) }
     val strokes = remember { (1..50 step 5).toList() }
 
     Column(modifier = Modifier.padding(horizontal = 8.dp)) {
@@ -164,6 +164,21 @@ fun ColorPicker(
                     }
                 )
         )
+    }
+}
+
+@Composable
+fun SendButton(
+    isVisible: Boolean = false,
+    send: () -> Unit
+) {
+    if (isVisible) {
+        FloatingActionButton(
+            onClick = { send() },
+            Modifier.offset(x = (-10).dp, y = (-70).dp),
+        ) {
+            Icon(imageVector = Icons.Default.Send, contentDescription = "", tint = Color.Blue)
+        }
     }
 }
 
