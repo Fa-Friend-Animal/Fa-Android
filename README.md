@@ -20,3 +20,5 @@ CommitType 설명
 🚀 :: 새 버전 릴리즈 ( 커밋은 아니지만😏
 
 
+# 작성된 아티클
+- [[Android] github action으로 CI 구축하기](https://happy-kmc.tistory.com/26?category=1186525)
