@@ -19,4 +19,4 @@ CommitType 설명
 
 🚀 :: 새 버전 릴리즈 ( 커밋은 아니지만😏
 
-🔀 :: Merge or PR
+
