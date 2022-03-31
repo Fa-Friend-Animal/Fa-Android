@@ -81,7 +81,7 @@ private fun firebaseAuthWithGoogle(context: Context, idToken: String,navControll
             if (task.isSuccessful) {
                 // Sign in success, update UI with the signed-in user's information
                 Log.d("TAG", "signInWithCredential:success")
-                navController.navigate(Screen.MainScreen.route)
+//                navController.navigate(Screen.MainScreen.route)
 
                 Toast.makeText(context, "성공", Toast.LENGTH_SHORT).show()
             } else {
