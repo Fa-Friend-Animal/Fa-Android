@@ -1,4 +1,4 @@
-package com.example
+package com.example.fa_android.feature.main
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
