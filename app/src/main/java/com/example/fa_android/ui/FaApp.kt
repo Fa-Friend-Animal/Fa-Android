@@ -10,7 +10,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.fa_android.di.loginModule
 import com.example.fa_android.feature.login.screen.Login
-import com.example.fa_android.feature.main.Main
+//import com.example.fa_android.feature.main.Main
 import com.example.fa_android.util.Screen
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -61,7 +61,7 @@ class FaApplication : Application() {
         startKoin {
             androidLogger()
             androidContext(this@FaApplication)
-//            modules(loginModule)
+            modules(loginModule)
         }
 
     }
