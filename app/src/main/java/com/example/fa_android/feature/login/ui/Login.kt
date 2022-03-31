@@ -1,4 +1,4 @@
-package com.example.fa_android.feature.login.screen
+package com.example.fa_android.feature.login.ui
 
 import android.content.Context
 import android.util.Log
@@ -17,14 +17,11 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.fa_android.R
 import com.example.fa_android.feature.login.LoginViewModel
-import com.example.fa_android.feature.login.ui.SignInButton
-import com.example.fa_android.util.Screen
 import com.example.fa_android.util.login.AuthResultContract
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.launch
 import org.koin.androidx.compose.getViewModel
 
 @ExperimentalAnimationApi
@@ -81,7 +78,6 @@ private fun firebaseAuthWithGoogle(context: Context, idToken: String,navControll
             if (task.isSuccessful) {
                 // Sign in success, update UI with the signed-in user's information
                 Log.d("TAG", "signInWithCredential:success")
-//                navController.navigate(Screen.MainScreen.route)
 
                 Toast.makeText(context, "성공", Toast.LENGTH_SHORT).show()
             } else {
