@@ -1,6 +1,8 @@
-package com.example.fa_android.ui.screen
+package com.example.fa_android.feature.login.ui
 
-import android.graphics.drawable.BitmapDrawable
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.LinearOutSlowInEasing
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -14,23 +16,16 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.content.res.ResourcesCompat
 import com.example.fa_android.R
 import com.example.fa_android.ui.theme.Shapes
-
-@OptIn(ExperimentalMaterialApi::class)
-@Composable
-fun LoginScreen(onClick: () -> Unit) {
-    SignInButton(onClick = onClick)
-}
 
 
 @ExperimentalMaterialApi
 @Composable
 fun SignInButton(
-    text: String = "로그인",
+    text: String,
     loadingText: String = "Signing in...",
-    icon: Painter = painterResource(R.drawable.google_login_btn),
+    icon: Painter,
     isLoading: Boolean = false,
     shape: Shape = Shapes.medium,
     borderColor: Color = Color.LightGray,
@@ -54,6 +49,12 @@ fun SignInButton(
                     end = 16.dp,
                     top = 12.dp,
                     bottom = 12.dp
+                )
+                .animateContentSize(
+                    animationSpec = tween(
+                        durationMillis = 300,
+                        easing = LinearOutSlowInEasing
+                    )
                 ),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
@@ -80,7 +81,15 @@ fun SignInButton(
     }
 }
 
+@ExperimentalMaterialApi
 @Composable
-fun LoginScreenPreview(onClick: () -> Unit) {
-    LoginScreen(onClick)
+@Preview
+fun SignInButtonPreview() {
+    SignInButton(
+        text = "Sign in with Google",
+        loadingText = "Signing in...",
+        isLoading = false,
+        icon = painterResource(id = R.drawable.ic_google_logo),
+        onClick = { }
+    )
 }
