@@ -17,12 +17,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 val pink = Color(0xFFFFE1E1)
 val lightPink = Color(0xFFFFEAEA)
 
 @Composable
-fun MainScreen(modifier: Modifier = Modifier) {
+fun Main(modifier: Modifier = Modifier, navController: NavController) {
 
     Surface(modifier.background(lightPink)) {
 
@@ -41,10 +42,6 @@ fun MainScreen(modifier: Modifier = Modifier) {
 }
 
 
-@Composable
-fun MainScreenPreview() {
-    MainScreen()
-}
 
 
 @Composable

@@ -45,7 +45,7 @@ fun FaApp() {
 //    }
     NavHost(navController = navController, startDestination = Screen.LoginScreen.route) {
         composable(Screen.LoginScreen.route) { Login(navController = navController) }
-//        composable(route = Screen.MainScreen.route,) { Main(navController = navController) }
+        composable(route = Screen.MainScreen.route,) { Main(navController = navController) }
 
     }
 }
